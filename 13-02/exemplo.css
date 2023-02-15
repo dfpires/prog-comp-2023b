@@ -1,0 +1,15 @@
+body {
+    background: black;
+}
+/* usamos # pois é um id */
+#p1 {
+    color: white;
+}
+
+#p2 {
+    color: red;
+}
+
+#p3 {
+    color: green;
+}
