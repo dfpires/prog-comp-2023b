@@ -1,0 +1,17 @@
+body {
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#container{
+    width: 360px;
+    height: 712px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+#profile img {
+    width: 112px;
+}

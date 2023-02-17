@@ -1,0 +1,24 @@
+header {
+    border: 1px solid red;
+    width: 500px;
+    margin: 30px auto;
+    height: 400px;
+}
+#d1{
+    border: 1px solid green;
+    width: 300px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+}
+#d2{
+    border: 1px solid blue;
+    margin-left: 20px;
+    padding: 0px 20px;
+}
+#d3{
+    border: 1px solid cyan;
+}
+span {
+    border: 1px solid black;
+}
