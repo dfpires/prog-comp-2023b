@@ -32,4 +32,25 @@ body * {
 
 #container ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#container ul li a {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    align-items: center; /* alinha em relação a vertical */
+    justify-content: center; /* alinha em relação a horizontal */
+    padding: 16px 24px; /* 16px top e bottom 24px right e left */ 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s
+}
+
+#container ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid white;
 }
