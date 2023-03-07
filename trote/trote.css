@@ -3,11 +3,16 @@
     padding: 0;
 }
 body {
-    background-image: url(./assets/bg-mobile.jpg);
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    color: white;
+    color: var(--text-color);
+}
+
+.claro {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg)
 }
 
 body * {
@@ -35,6 +40,7 @@ body * {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 24px 0px;
 }
 
 #container ul li a {
@@ -53,4 +59,22 @@ body * {
 #container ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid white;
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0px;
+    font-size: 24px;
+}
+
+#social-links a {
+    padding: 16px;
+    border-radius: 50px;
+    transition: background 2s;
+}
+
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
