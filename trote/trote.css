@@ -114,6 +114,8 @@ footer {
 #switch {
     border: 1px solid black;
     position: relative;
+    width: 64px;
+    margin: 4px auto;
 }
 #switch button {
     border: 1px solid red;
@@ -123,6 +125,12 @@ footer {
     border-radius: 50%;
 
     position: absolute; /* posicionado em relação à div switch */
+    top: 50%;
+    left: 0;
+    z-index: 1; /* camada 1, outros elementos estão na camada 0 */
+    /* translate ele é um deslocamento do elemento
+    valor é negativo pois precisamos subir elemento*/
+    transform: translateY(-50%); 
 }
 
 #switch span {
@@ -132,4 +140,9 @@ footer {
     height: 24px;
     background: var(--surface-color);
     border-radius: 9999px;
+}
+
+.claro #switch button {
+    right: 0;
+    left: initial;
 }
