@@ -149,12 +149,11 @@ footer {
 
 table {
     border-collapse: collapse;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
 }
 td, th { 
     border: 1px solid black;
-
 }
 
+th {
+    padding-right: 10px;
+}

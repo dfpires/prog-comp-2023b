@@ -70,6 +70,8 @@ body * {
 }
 
 #container ul li a {
+    margin-right: 10px;
+    margin-left: 10px;
     display: flex;
     border: 1px solid var(--stroke-color);
     align-items: center; /* alinha em relação a vertical */
@@ -145,16 +147,5 @@ footer {
 .claro #switch button {
     right: 0;
     left: initial;
-}
-
-table {
-    border-collapse: collapse;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-td, th { 
-    border: 1px solid black;
-
 }
 
