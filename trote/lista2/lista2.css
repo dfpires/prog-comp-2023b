@@ -1,0 +1,41 @@
+#container{
+    border: 1px solid black;
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#divNro1 {
+  /*  border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#divNro2 {
+  /*  border: 1px solid green; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#divButton {
+  /*  border: 1px solid blue; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#divResultado {
+  /*  border: 1px solid cyan; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#divEscolha {
+  /*  border: 1px solid yellow; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span {
+  color: red;
+}
