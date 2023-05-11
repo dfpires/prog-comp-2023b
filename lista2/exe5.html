@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="lista2.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="divNro1"> 
+               Número 1 <input type="number" id="nro1"/> 
+            </div>
+            <div id="divNro2"> 
+                Número 2 <input type="number" id="nro2"/> 
+             </div>
+             <div id="divEscolha">
+                Escolha a operação
+                <select id="escolha"> 
+                    <option value="1"> Média </option>
+                    <option value="2"> Subtração </option>
+                    <option value="3"> Produto </option>
+                    <option value="4"> Divisão </option>
+                </select>
+             </div>
+             <div id="divButton">
+                <button onclick="exe5()"> Calcular operação </button>
+             </div>
+             <div id="divResultado">
+                <p> 
+                    O resultado da operação é <span id="resultado"> </span>
+                </p>
+             </div>
+        </div> 
+        <script src="lista2.js"></script>        
+    </body>
+</html>

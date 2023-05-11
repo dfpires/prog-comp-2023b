@@ -23,14 +23,31 @@
                 <span> </span>
             </div>
             <!-- criar uma lista não ordenada -->
-            <ul>
-                <li> <a href="equipes.html"> Equipes </a> </li>
-                <li> <a href="entidades.html#"> Entidades Sociais </a> </li>
-                <li> <a href="#"> Gincana </a> </li>
-                <li> <a href="#"> Integração </a> </li> 
-                <li> <a href="kit.html"> Calculadora - Kits </a> </li> 
-                <li> <a href="adicional.html"> Calculadora - Itens adicionais </a> </li>
-            </ul>
+            <div id="adicional"> 
+                <div> 
+                    <input type="checkbox" id="padrao"/> Conjunto Padrão
+                    <input type="number" id="qtdePadrao"/> 
+                </div>
+                <div> 
+                    <input type="checkbox" id="kitAlimenta"/> Kit Allimentação
+                    <input type="number" id="qtdeKitAlimenta"/> 
+                </div>
+                <div> 
+                    <input type="checkbox" id="padrao"/> Lata de suplemento
+                    <input type="number" id="qtdeLata"/> 
+                </div>
+                <div> 
+                    <input type="checkbox" id="arroz5"/> Arroz de 5 kg
+                    <input type="number" id="qtdeArroz5"/> 
+                </div>
+                <div>
+                    <button onclick="calcularAdicional()"> Calcular adicional </button>
+                </div>
+                <!-- aqui vem o resultado-->
+                <div>
+                    <p id="resultado"> </p>
+                </div>
+            </div>
             <div id="social-links"> 
                 <a href="https://github.com/dfpires" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
@@ -52,6 +69,7 @@
             </footer>
         </div>
         <script src="scripts.js"> </script>
+        <script src="adicional.js"> </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

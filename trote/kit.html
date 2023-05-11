@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="trote.css"/>
+        <link rel="stylesheet" href="kit.css"/>
     </head>
     <body>
         <div id="container">
@@ -23,14 +23,17 @@
                 <span> </span>
             </div>
             <!-- criar uma lista não ordenada -->
-            <ul>
-                <li> <a href="equipes.html"> Equipes </a> </li>
-                <li> <a href="entidades.html#"> Entidades Sociais </a> </li>
-                <li> <a href="#"> Gincana </a> </li>
-                <li> <a href="#"> Integração </a> </li> 
-                <li> <a href="kit.html"> Calculadora - Kits </a> </li> 
-                <li> <a href="adicional.html"> Calculadora - Itens adicionais </a> </li>
-            </ul>
+            <div id="kit">
+                <div> 
+                    Informe a qtde de kits entregues <input type="number" id="kits"/>
+                </div>
+                <div>
+                    <button id="botaoKit" onclick="calcularKits()"> Calcular Pontuação dos kits </button>
+                </div>
+                <div> <!-- resultado -->
+                    <p id="pontos">  </p>
+                </div>
+            </div>
             <div id="social-links"> 
                 <a href="https://github.com/dfpires" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
@@ -52,6 +55,7 @@
             </footer>
         </div>
         <script src="scripts.js"> </script>
+        <script src="kits.js"> </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
